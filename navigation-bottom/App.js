@@ -1,13 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import {Slot} from "expo-router"
 
-export default function App() {
+export default function HomeScreen() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+    <>
+    <Text style={{marginTop: 50}}>Das ist der Header</Text>
+    <Slot />
+    </>
+  )
 }
 
 const styles = StyleSheet.create({
